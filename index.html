@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="author" content="Gabriel James Valdez / Rojan Joefel Dumlao / Bhella Patrice Bueno">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="section" content="Photon / Electron / Graviton">
+
+        <!--Google Fonts-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+        </style>
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" />
+        <!--JQuery-->
+        <script>
+            window.onload = function() {
+                // Check if the URL contains the hash for the victory screen
+                if (window.location.hash === "#victoryScreen") {
+                    // Redirect to the base URL (index.html)
+                    window.location.href = window.location.pathname;
+                }
+            }
+        </script>
+        <script src="jquery-3.7.1.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+        <!--Bootstrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <section class="container">
+            <header>
+                <section class="left">
+                    <div class="timer protest-guerrilla-regular" id="timer">03:00</div>
+                    <audio id="gameMusic" src="" preload="auto"></audio>
+                </section>
+                <section class="right">
+                    <h1 id="titleHeader" class="space-grotesk-semibold">Computer HardWare Memory Game</h1>
+                    <label class="switch">
+                        <input id="themeSelector" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </section>
+            </header>
+            <article id="gameContainer" class="gameContainer row">
+                <!--Cards will be generated here-->
+            </article>
+            <button id="startButton" class="button">Start Game</button>
+            
+            <section id="victoryScreen">
+                <h1>Congratulations!</h1>
+                <h3 id="moveLine">YOU F*CKING CHEATER</h3>
+                <button class="retry glow-on-hover">Play For Real</button>
+            </section>
+        </section>
+        
+    </body>
+    <script src="script.js"></script>
+</html>
